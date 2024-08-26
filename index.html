@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-co">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Encriptador de Texto</title>
 </head>
 <body>
-    
+    <script src="./app.js" defer></script>
+    <!--Sección del encabezado, contiene el logo de Alura y los links del menú-->
+    <header>
+            <div class="encabezado">
+            <a href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer" ><image src="./assets/imagen_aluralogo.png" alt="Alura Latam" class="encabezado__logo"></image></a>
+            <nav class="encabezado__menu">
+                <a href="./index.html" class="encabezado__menu__links">Home</a>
+                <a href="./instrucciones.html" class="encabezado__menu__links">Instrucciones</a>
+            </nav>
+            <h1 class="encabezado__titulo"><p>Encriptador de</p><p>Texto</p></h1>
+        </div>
+    </header>
+    <main >
+        <div class="encriptador">
+            <!--Sección de ingreso del texto que se va a encriptar/desencriptar-->
+            <div class="encriptador__ingresos">
+                <textarea name="textoPorEncriptar" class="encriptador__ingresos__texto" required>Ingresa el texto aquí...</textarea>
+                <image src="./assets/imagen_restriccion.png" alt="Solo letras minúsculas y sin acentos" class="encriptador__ingresos__restriccion"></image>
+                <div class="encriptador__ingresos__botones">
+                    <button class="encriptador__ingresos__botones__encriptar">Encriptar</button>
+                    <button class="encriptador__ingresos__botones__desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <!--Sección del resultado-->
+            <div class="encriptador__resultado">
+                <div class="encriptador__resultado__contenido">
+                    <image src="./assets/imagen_explorador.png" alt="Dibujo explorador" class="encriptador__resultado__contenido__explorador"></image>
+                    <h2 class="encriptador__resultado__contenido_subtitulo">No hay texto para encriptar</h2>
+                    <p class="encriptador__resultado__contenido_texto">Por favor, ingresa el texto que deseas procesar.</p>
+                </div>
+                <div class="encriptador__resultado__botones">
+                    <button class="encriptador__resultado__botones__copiar">Copiar  (Crtl+C)</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Sección del píe de pagína, contiene la información del desarrollador-->
+    <footer>
+        <div class="footer_texto">    
+            <p>Desarrollado por: Jorge Cañón para el programa ONE de Oracle + Alura</p>
+        </div>
+    </footer>
 </body>
 </html>

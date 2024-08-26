@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+:root {
+    --color-uno: #F3F5FC;
+    --color-dos: #0A3871;
+    --color-tres: #D8DFE8;
+    --color-cuatro: #FFFFFF; 
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+html{
+    height: 100%;
+    min-height: 800px;
+
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    height: 100%;
+    min-height: 800px;
+    
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-cuatro);
+}
+
+.encabezado{
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+}
+
+.encabezado__logo{
+    width: 120px;
+}
+
+.encabezado__menu{
+    width: 60%;
+    display: flex;
+    gap: 30px;
+}
+
+.encabezado__menu__links{
+    color: var(--color-dos);
+    text-decoration: none;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+}
+
+.encabezado__titulo{
+    padding: 0% 5% 0% 0%;
+    width: 30%;
+    text-align: right;
+    font-family: var(--fuente-montserrat);
+    font-size: 2rem;
+}
+
+main{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-uno);
+}
+
+.encriptador{
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0% 5% 0% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.instrucciones{
+    width: 80%;
+    max-width: 1280px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.50rem;
+    text-align: justify;
+}
+
+.instrucciones__lista{
+    padding: 0% 0% 0% 10%;
+    width: 90%;
+    max-width: 1280px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.50rem;
+    text-align: justify;
+}
+
+.encriptador__ingresos{
+    height: 70%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.encriptador__ingresos__texto{
+    min-height: 300px;
+    width: 100%;
+    border: none;
+    background-color: var(--color-uno);
+    color: var(--color-dos);
+    font-family: var(--fuente-inter);
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.encriptador__ingresos__botones{
+    height: 6%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encriptador__ingresos__botones__encriptar{
+    font-family: var(--fuente-inter);
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--color-dos);
+    color: var(--color-tres);
+    border: 2px solid var(--color-dos);
+    border-radius: 24px;
+    width: 40%;
+}
+
+.encriptador__ingresos__botones__encriptar:hover{
+    background-color: var(--color-tres);
+    color: var(--color-dos);
+}
+
+.encriptador__ingresos__botones__desencriptar{
+    font-family: var(--fuente-inter);
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--color-tres);
+    color: var(--color-dos);
+    border: 2px solid var(--color-dos);
+    border-radius: 24px;
+    width: 40%;
+}
+
+.encriptador__ingresos__botones__desencriptar:hover{
+    background-color: var(--color-dos);
+    color: var(--color-tres);
+}
+
+.encriptador__resultado{
+    height: 90%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.encriptador__resultado__contenido{
+    height: 96%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/imagen_fondo.png");
+    background-size: 100% 100%;
+    gap: 20px;
+}
+
+.encriptador__resultado__contenido__explorador{
+    width: 60%;
+}
+
+.encriptador__resultado__contenido_subtitulo{
+    width: 80%;
+    font-family: var(--fuente-inter);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.encriptador__resultado__contenido_texto{
+    width: 80%;
+    font-family: var(--fuente-inter);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.encriptador__resultado__botones{
+    height: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.encriptador__resultado__botones__copiar{
+    border: none;
+    background-color: transparent;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.encriptador__resultado__botones__copiar:hover{
+    color: var(--color-dos);
+}
+
+footer{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-dos);
+}
+
+.footer_texto{
+    max-width: 1280px;
+    color: var(--color-uno);
+    font-family: var(--fuente-inter);
+    font-size: 0.9rem;
+}
+
+@media(max-width:1024px){
+    header{
+        height: 7%;
+    }
+
+    main{
+        height: 90%;
+    }
+
+    .encabezado__logo{
+        width: 100px;
+    }
+
+    .encabezado__titulo{
+        width: 30%;
+        font-size: 1.5rem;
+    }
+    
+    .encriptador{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        max-width: 767px;
+    }
+
+    .encriptador__ingresos{
+        height: 45%;
+        width: 100%;
+        gap: 10px
+    }
+        
+    .encriptador__ingresos__texto{
+        min-height: 70%;
+        font-size: 2.5rem;
+        
+    }
+
+    .encriptador__ingresos__botones{
+        height: 15%;
+        width: 50%;
+    }
+
+    .encriptador__ingresos__botones__encriptar{
+        font-size: 1rem;
+        height: 100;
+        width: 40%;
+    }
+        
+    .encriptador__ingresos__botones__desencriptar{
+        font-size: 1rem;
+        height: 100;
+        width: 40%;
+    }
+
+    .encriptador__resultado{
+        height: 45%;
+        width: 100%;
+    }
+
+    .encriptador__resultado__contenido__explorador{
+        width: 35%;
+    }
+
+    footer{
+        height: 3%;
+    }
+        
+    .encriptador__resultado__contenido{
+        height: 92%;
+        gap: 10px;
+    }
+    
+    .encriptador__resultado__contenido_subtitulo{
+        font-size: 1.5rem;
+    }
+    
+    .encriptador__resultado__contenido_texto{
+        font-size: 1rem;
+    }
+    
+    .encriptador__resultado__botones{
+        height: 8%;
+    }
+}
+
+@media(max-width:480px){
+    header{
+        height: 7%;
+    }
+
+    main{
+        height: 89%;
+    }
+
+    .encabezado__logo{
+        width: 70px;
+    }
+
+    .encabezado__menu{
+        width: 60%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .encabezado__menu__links{
+        font-size: 1rem;
+    }
+
+    .encabezado__titulo{
+        padding: 0% 2% 0% 0%;
+        width: 30%;
+        font-size: 1rem;
+    }
+    
+    .encriptador{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        max-width: 480px;
+    }
+
+    .instrucciones{
+        max-width: 480px;
+        font-size: 1rem;
+    }
+    
+    .instrucciones__lista{
+        max-width: 480px;
+        font-size: 1rem;
+    }    
+
+    .encriptador__ingresos{
+        height: 45%;
+        width: 100%;
+        gap: 10px
+    }
+        
+    .encriptador__ingresos__texto{
+        min-height: 70%;
+        font-size: 2rem; 
+    }
+
+    .encriptador__ingresos__botones{
+        height: 15%;
+        width: 80%;
+    }
+
+    .encriptador__ingresos__botones__encriptar{
+        font-size: 1.2rem;
+        height: 100;
+        width: 45%;
+    }
+        
+    .encriptador__ingresos__botones__desencriptar{
+        font-size: 1.2rem;
+        height: 100;
+        width: 45%;
+    }
+
+    .encriptador__resultado{
+        height: 45%;
+        width: 100%;
+    }
+
+    .encriptador__resultado__contenido{
+        height: 92%;
+        gap: 10px;
+    }
+    
+    .encriptador__resultado__contenido__explorador{
+        width: 45%;
+    }
+
+    .encriptador__resultado__contenido_subtitulo{
+        font-size: 1.5rem;
+    }
+    
+    .encriptador__resultado__contenido_texto{
+        font-size: 1rem;
+    }
+    
+    .encriptador__resultado__botones{
+        height: 8%;
+    }
+
+    footer{
+        height: 4%;
+        width: 80%;
+        padding: 0% 10% 0% 10%
+    }
+
+    .footer_texto{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
