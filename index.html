@@ -23,22 +23,22 @@
         <div class="encriptador">
             <!--Sección de ingreso del texto que se va a encriptar/desencriptar-->
             <div class="encriptador__ingresos">
-                <textarea name="textoPorEncriptar" class="encriptador__ingresos__texto" required>Ingresa el texto aquí...</textarea>
+                <textarea id="textoPorProcesar" onclick="reiniciar()" class="encriptador__ingresos__texto" required>Ingresa el texto aquí...</textarea>
                 <image src="./assets/imagen_restriccion.png" alt="Solo letras minúsculas y sin acentos" class="encriptador__ingresos__restriccion"></image>
                 <div class="encriptador__ingresos__botones">
-                    <button class="encriptador__ingresos__botones__encriptar">Encriptar</button>
-                    <button class="encriptador__ingresos__botones__desencriptar">Desencriptar</button>
+                    <button onclick="encriptarTexto()" class="encriptador__ingresos__botones__encriptar">Encriptar</button>
+                    <button onclick="desencriptarTexto()" class="encriptador__ingresos__botones__desencriptar">Desencriptar</button>
                 </div>
             </div>
             <!--Sección del resultado-->
             <div class="encriptador__resultado">
-                <div class="encriptador__resultado__contenido">
-                    <image src="./assets/imagen_explorador.png" alt="Dibujo explorador" class="encriptador__resultado__contenido__explorador"></image>
-                    <h2 class="encriptador__resultado__contenido_subtitulo">No hay texto para encriptar</h2>
-                    <p class="encriptador__resultado__contenido_texto">Por favor, ingresa el texto que deseas procesar.</p>
+                <div id="encriptadorResultadoInicial" class="encriptador__resultado__contenido">
+                    <image id="imagenExplorador" src="./assets/imagen_explorador.png" alt="Dibujo explorador" class="encriptador__resultado__contenido__explorador"></image>
+                    <h2 id="tituloResultado" class="encriptador__resultado__contenido_subtitulo">No hay texto para encriptar</h2>
+                    <p id="textoResultado" class="encriptador__resultado__contenido_texto">Por favor, ingresa el texto que deseas procesar.</p>
                 </div>
                 <div class="encriptador__resultado__botones">
-                    <button class="encriptador__resultado__botones__copiar">Copiar  (Crtl+C)</button>
+                    <button onclick="copiarTexto()" class="encriptador__resultado__botones__copiar">Copiar  (Crtl+C)</button>
                 </div>
             </div>
         </div>
@@ -47,6 +47,7 @@
     <footer>
         <div class="footer_texto">    
             <p>Desarrollado por: Jorge Cañón para el programa ONE de Oracle + Alura</p>
+            <p>joencahe@gmail.com</p>
         </div>
     </footer>
 </body>

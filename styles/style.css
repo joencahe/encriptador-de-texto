@@ -126,7 +126,7 @@ main{
     background-color: var(--color-uno);
     color: var(--color-dos);
     font-family: var(--fuente-inter);
-    font-size: 3.5em;
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -205,7 +205,7 @@ main{
 .encriptador__resultado__contenido_texto{
     width: 80%;
     font-family: var(--fuente-inter);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -243,6 +243,7 @@ footer{
     color: var(--color-uno);
     font-family: var(--fuente-inter);
     font-size: 0.9rem;
+    text-align: center;
 }
 
 @media(max-width:1024px){
@@ -278,7 +279,7 @@ footer{
         
     .encriptador__ingresos__texto{
         min-height: 70%;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         
     }
 
@@ -336,7 +337,7 @@ footer{
     }
 
     main{
-        height: 89%;
+        height: 87%;
     }
 
     .encabezado__logo{
@@ -384,7 +385,7 @@ footer{
         
     .encriptador__ingresos__texto{
         min-height: 70%;
-        font-size: 2rem; 
+        font-size: 1rem; 
     }
 
     .encriptador__ingresos__botones{
@@ -431,7 +432,7 @@ footer{
     }
 
     footer{
-        height: 4%;
+        height: 6%;
         width: 80%;
         padding: 0% 10% 0% 10%
     }
